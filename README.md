@@ -1,26 +1,100 @@
-Aegis-Scan
+# Aegis-Scan
 
-A Python-based CLI security scanner for network reconnaissance and threat intelligence enrichment.
+> A Python-based CLI security scanner for network reconnaissance and threat intelligence enrichment.
 
+---
 
-Overview
+## Overview
+
 Aegis-Scan is a modular command-line security tool built for blue team workflows. It combines active network scanning with threat intelligence APIs to help analysts quickly assess hosts, identify open services, and enrich findings with reputation data — all from a single interface.
+
 Built as part of a hands-on cybersecurity portfolio, Aegis-Scan is designed with real-world DFIR and threat hunting use cases in mind.
 
-Features
+---
 
-Network scanning — Host discovery and service detection via Nmap (-sV)
-Threat intelligence enrichment — IP and file reputation lookups via VirusTotal and AbuseIPDB
-AI-assisted analysis — Automated finding summarization via Google Gemini API
-Structured reporting — Clean, readable output saved to report files
-Modular architecture — Separate modules for scanning, analysis, and reporting
+## Features
 
+- **Network scanning** — Host discovery and service detection via Nmap (`-sV`)
+- **Threat intelligence enrichment** — IP and file reputation lookups via VirusTotal and AbuseIPDB
+- **AI-assisted analysis** — Automated finding summarization via Google Gemini API
+- **Structured reporting** — Clean, readable output saved to report files
+- **Modular architecture** — Separate modules for scanning, analysis, and reporting
 
-Installation
-Requirements
+---
 
-Python 3.8+
-Nmap installed on your system
-API keys for VirusTotal, AbuseIPDB, and Google Gemini
+## Installation
 
-Steps
+**Requirements**
+
+- Python 3.8+
+- Nmap installed on your system
+- API keys for VirusTotal, AbuseIPDB, and Google Gemini
+
+**Steps**
+
+```bash
+# Clone the repository
+git clone https://github.com/fraqve/Aegis-scaner.git
+cd Aegis-scaner
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure API keys
+cp config.json.example config.json
+# Edit config.json and add your API keys
+```
+
+> **Note:** `config.json` contains sensitive credentials and is excluded from version control via `.gitignore`. Never commit it.
+
+---
+
+## Usage
+
+```bash
+# Basic scan
+python main.py --target 192.168.1.1
+
+# Scan with threat intelligence enrichment
+python main.py --target 192.168.1.1 --enrich
+
+# Save report to file
+python main.py --target 192.168.1.1 --enrich --output report.txt
+```
+
+---
+
+## Project Structure
+
+```
+Aegis-scaner/
+├── main.py          # Entry point and CLI argument handling
+├── scan.py          # Nmap wrapper and network scanning logic
+├── analysis.py      # Threat intelligence API integrations
+├── report.py        # Output formatting and report generation
+├── config.json      # API keys and configuration (not tracked)
+└── requirements.txt
+```
+
+---
+
+## Tech Stack
+
+- **Python 3** — Core language
+- **python-nmap** — Nmap wrapper
+- **requests** — API communication
+- **VirusTotal API** — File and IP reputation
+- **AbuseIPDB API** — IP abuse confidence scoring
+- **Google Gemini API** — AI-powered finding analysis
+
+---
+
+## Status
+
+Actively in development. Phase 1 (scanning and reporting) complete. Phase 2 (threat intelligence enrichment and AI analysis) in progress.
+
+---
+
+## Disclaimer
+
+This tool is intended for authorized security assessments and educational purposes only. Always obtain proper permission before scanning any network or system you do not own.
