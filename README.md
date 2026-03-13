@@ -27,6 +27,7 @@ Aegis-Scaner is a modular command-line security tool built for blue team workflo
 - Python 3.8+
 - Nmap, Nikto, Gobuster installed on your system
 - API keys for VirusTotal, AbuseIPDB, and Google Gemini
+- Word list for gobuster (stored in /usr/share/seclists or provided with --wordlist flag) 
 
 **Steps**
 
@@ -79,21 +80,7 @@ Aegis-scaner/
 
 ---
 
-## Status
 
-Actively in development.
-
-**Phase 1 (scanning and reporting)** complete.
-
-**Phase 2 (analysis)** in progress:
-
-  -**Virus total api** Done.
-  
-  -**Abuseipdb** in progress.
-  
-  -**Gemini ai analysis** in progress.
-
----
 
 ## Disclaimer
 
