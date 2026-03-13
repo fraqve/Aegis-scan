@@ -1,4 +1,4 @@
-# Aegis-Scan
+# Aegis-Scaner
 
 > A Python-based CLI security scanner for network reconnaissance and threat intelligence enrichment.
 
@@ -6,9 +6,7 @@
 
 ## Overview
 
-Aegis-Scan is a modular command-line security tool built for blue team workflows. It combines active network scanning with threat intelligence APIs to help analysts quickly assess hosts, identify open services, and enrich findings with reputation data — all from a single interface.
-
-Built as part of a hands-on cybersecurity portfolio, Aegis-Scan is designed with real-world DFIR and threat hunting use cases in mind.
+Aegis-Scaner is a modular command-line security tool built for blue team workflows. It combines active network scanning with threat intelligence APIs to help analysts quickly assess hosts, identify open services, and enrich findings with reputation data.
 
 ---
 
@@ -86,7 +84,12 @@ Aegis-scaner/
 
 ## Status
 
-Actively in development. Phase 1 (scanning and reporting) complete. Phase 2 (threat intelligence enrichment and AI analysis) in progress.
+Actively in development.
+Phase 1 (scanning and reporting) complete.
+Phase 2:
+  -Virus total api Done.
+  -Abused in progress.
+  -Gemini ai analysis in progress.
 
 ---
 
