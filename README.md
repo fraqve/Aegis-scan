@@ -93,10 +93,10 @@ This tool is intended for authorized security assessments and educational purpos
 ## Demo
 
 **Running the scanner:**
-![Running](proof-of-work/project_running.png)
+![Running](proof-of-work/project_running.jpg)
 
 **Master report output:**
-![Report](proof-of-work/report.png)
+![Report](proof-of-work/report.jpg)
 
 **Gemini AI analysis:**
-![Gemini Report](proof-of-work/gemini_report.png)
+![Gemini Report](proof-of-work/gemini_report.jpg)
