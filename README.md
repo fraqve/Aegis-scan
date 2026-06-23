@@ -36,7 +36,7 @@ cd Aegis-scan
 pip install -r requirements.txt
 ```
 
-Then add your API keys to `config.json` (use `config.example.json` as a template — don't commit the real one).
+Then add your API keys to `config.json`. 
 
 ## How to Use It
 
